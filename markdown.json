@@ -1,0 +1,73 @@
+{
+    "积分":{
+		"prefix": "int",
+		"body": [
+			"\\int_{$1}^{$2}{${3:f(x)}}d{$4}"
+		],
+		"description": "微积分"
+	},
+	"大括号":{
+		"prefix": "left",
+		"body": [
+			"\\left\\{\\begin{aligned}",
+   		     "\t&$1\\\\\\\\",
+   		     "\t&$2\\\\\\\\",
+			"\\end{aligned}",
+			"\\right.$0"
+		],
+		"description": "插入一个大括号"
+	},
+	"对齐的Latex块":{
+		"prefix": "begin",
+		"body": [
+			"\\begin{aligned}",
+			"\t&$1\\\\\\\\",
+			"\\end{aligned}"
+		]
+	},
+	"导数":{
+		"prefix": "dy",
+		"body": [
+			"\\frac{dy}{dx}$0"
+		],
+		"description": "莱布尼兹风格的导数"
+	}
+	"C":{
+		"prefix": "C",
+		"body": [
+			"C_$1^$2$0"
+		]
+	},
+	"对齐的一行":{
+		"prefix": "line",
+		"body": [
+			"&$1\\\\\\\\$0"
+		]
+	},
+	"成对的因为所以":{
+		"prefix": "because",
+		"body": [
+			"&\\because $1\\\\\\\\",
+			"&\\therefore $2\\\\\\\\$0",
+		]
+	},
+	"函数连续":{
+		"prefix": "cf",
+		"body": [
+			"f(x) \\in c[$1,$2]$0"
+		],
+		"description": "函数连续"
+	},
+	"拉格朗日中值定理":{
+		"prefix": "L",
+		"body": [
+			"\\frac{f($1)-f($2)}{$1-$2}=f'(${3:\\xi})"
+		]
+	},
+	"柯西中值定理":{
+		"prefix": "K",
+		"body": [
+			"\\frac{f($1)-f($2)}{g($1)-g($2)}=\\frac{f'(${3:\\xi})}{g'(${3:\\xi})}"
+		]
+	}
+}
