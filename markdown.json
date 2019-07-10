@@ -31,7 +31,7 @@
 			"\\frac{dy}{dx}$0"
 		],
 		"description": "莱布尼兹风格的导数"
-	}
+	},
 	"C":{
 		"prefix": "C",
 		"body": [
@@ -48,7 +48,7 @@
 		"prefix": "because",
 		"body": [
 			"&\\because $1\\\\\\\\",
-			"&\\therefore $2\\\\\\\\$0",
+			"&\\therefore $2\\\\\\\\$0"
 		]
 	},
 	"函数连续":{
@@ -69,5 +69,12 @@
 		"body": [
 			"\\frac{f($1)-f($2)}{g($1)-g($2)}=\\frac{f'(${3:\\xi})}{g'(${3:\\xi})}"
 		]
+	},
+	"极限":{
+		"prefix": "lim",
+		"body": [
+			"\\lim_{${1:x} \\to $2}$0"
+		],
+		"description": "快速输入lim"
 	}
 }
